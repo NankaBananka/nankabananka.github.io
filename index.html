@@ -1,8 +1,153 @@
-<html>
+<!DOCTYPE HTML>
+<html lang="en">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+    
 </head>
 
 <body>
-<h1>Portfolio</h1>
+    <header>
+        <div class="row">
+
+            <div class="col-6">
+                <span></span>
+            </div>
+            
+            <div class="col-6">
+                <nav>
+                    <a href="#home" class="navigation">HOME</a>
+                    <a href="#about" class="navigation">ABOUT</a>
+                    <a href="#portfolio" class="navigation">PORTFOLIO</a>
+                    <a href="#information" class="navigation">CONTACTS</a>
+                </nav>
+            </div>
+            
+        </div>
+    </header>
+    
+  <main>
+    <section id="home">
+      <h1>Nelya Shakirova <br><br>WEB DEVELOPER</h1>
+      <div id="codeblock">
+<!--      <p>&#60;p&#62;Keep calm and build&#60;/br&#62; <br>&nbsp;a website&#60;/p&#62;</p>-->
+      </div>
+    </section>
+      
+    <section id="about">
+        <div class="col-7">
+             <h1>Nelya Shakirova</h1>
+              <p>Self-educated web developer.After 10 years of working in financial accounting I decided to change a profession, and from March 2016 I'm learning programming and web-technologies. <br>My priorities in any kind of job are: high quality, patience and responsibility for the results. If you want well-made simple and neat design without lots of fancy effects - this is definitely where I can help you.</p>
+            
+            <ul><h3>Technical skills</h3>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>JQuery</li>
+                <li>Bootstrap</li>
+                <li>Python</li>         
+              </ul> 
+        </div>
+    
+        <div class="col-5">
+            <div class="thumbnail">
+                <img src="/img/IMG_1550.jpg" id="myfoto" alt="my foto" class="picbw">
+            </div>
+        </div>
+     
+    </section>
+      
+    <section id="portfolio">
+        <h1>Portfolio</h1>
+        <p>You can see here examples of my work. I'm working on it, so - to be continued...</p>
+            <div class="col-12 picbw">
+                <div class="img col-3">
+                    <a href="http://codepen.io/nanka_bananka/full/QEGZeB/" target="_blank"><img src="img/tribute.png" alt="tribute page"></a>
+                </div>
+                <div class="imgtext col-9">
+                    The very first project I built while I was studying FreeCodeCamp. Simple tribute page was made on HTML and CSS using elements of Bootstrap framework.
+                </div>    
+            </div>
+
+            <div class="col-12 picbw">
+                <div class="img col-3">
+                    <a href="http://codepen.io/nanka_bananka/full/YGBGgV/" target="_blank"><img src="img/weatherApi.png" alt="weather page"></a>
+                </div>
+                <div class="imgtext col-9">
+                    Local Weather site made for checking and visualisation user's location and local weather.<br> In this project I used third-part API's: <a href="http://ip-api.com" alt="Geolocation API">Geolocation API</a> for checking user's position and <a href="http://openweathermap.org" alt="OpenWeatherMap">OpenWeatherMap</a> for getting current weather with all necessary parameters. Current temperature and wind speed can be shown in two measurement formats: metric &#40;Celsius, meter/sec&#41; and Imperial &#40;Fahrenheit, miles/hour&#41;.<br>In work elements of Bootstrap framework were used for developing responsive design.
+
+                </div>    
+            </div>
+
+            <div class="col-12 picbw">
+                <div class="img col-3">
+                    <a href="#"><img src="img/quoteApi.png" alt="quote page"></a>
+                </div>
+                <div class="imgtext col-9">
+                    Randome Quote Machine gives you quote of famouse persone whenever you want, just click the button.<br> This project was build with help of Bootstrap framework and jQuery. I used <a href="http://forismatic.com/en/" alt="forismatic.com">Forismatic.com API</a> to get random quotes in JSON format.<br>PS. You can tweet quote if you really like it!
+                </div>    
+            </div>       
+      </section>
+        
+    </main>
+    
+    <footer>
+        <div id="contactme">
+            <h1>Contact me</h1>
+            
+            <div>
+                <p>I currently live in <a href="https://goo.gl/maps/NvJ8JRuqhnF2" target="_blank">Singapore</a>. Looking for job opportunities &#40;full- and part- time&#41; <br> Don't hesitate to contact me</p>
+                <span>
+                    <i class="fa fa-envelope-o"></i>
+                    <a href="mailto:nailia.shakirova?Subject=Cooperation%20offer" target="_top">
+                        nailia.shakirova@gmail.com
+                    </a>
+                </span>
+                <span>
+                    <i class="fa fa-skype"></i>
+                    <a href="skype:nelya.shakirova?chat">nelya.shakirova</a>
+                </span>
+            </div>
+
+            <div>
+                <span>         
+                    <a href="https://github.com/NankaBananka" target="_blank">
+                        <i class="fa fa-github" style="font-size:36px;color:#808080"></i>
+                    </a>
+                </span>
+                <span>              
+                    <a href="http://codepen.io/nanka_bananka/" target="_blank">
+                        <i class="fa fa-codepen" style="font-size:36px;color:#808080"></i>
+                    </a>
+                </span>
+                <span>              
+                    <a href="https://sg.linkedin.com/in/nshakirova" target="_blank">
+                        <i class="fa fa-linkedin" style="font-size:36px;color:#808080"></i>
+                    </a>
+                </span>
+            </div>
+
+
+
+            
+        </div>
+    </footer>
+    <div   id="information">
+    </div>
 </body>
-</html>
+    
