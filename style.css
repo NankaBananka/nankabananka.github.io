@@ -1,0 +1,317 @@
+* {
+      -webkit-box-sizing: border-box;
+         -moz-box-sizing: border-box;
+          -ms-box-sizing: border-box;
+              box-sizing: border-box;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+
+
+main {
+    overflow: auto;
+/*
+    overflow-x: hidden;
+    overflow-y: scroll;
+*/
+    margin-top:  0%;
+    display: block;
+    margin-left: -2%;
+    margin-right: -2%;
+    background: #1a1a1a;
+    position: relative
+}
+
+section {
+    display: block;
+    position: static;
+    z-index: 50;
+    width:  100%;
+    min-height: 100vh;
+    padding: 5% 5% 1% 5%;
+}
+
+header{
+    background: #ffffff;
+    width:  100%;
+    position: fixed;
+    z-index: 100;
+    top: 0px;
+    left: 0px;
+    text-align: left;
+    color: #000000;
+    margin: 0%;
+}
+
+nav a{
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  line-height: 150%;
+  width: 24%;
+  background: #ffffff;
+  color: #000000;
+  font-size:  0.9em;
+}
+
+nav{
+    margin: auto;
+}
+
+
+h1 {
+    font-size: 300%;
+}
+
+img {
+    border-style: solid #ffffff 1px;
+    border-radius: 1px;
+}
+
+
+
+#home {
+    color: #ffffff;
+    text-align: right;
+    background: url("img/IMG_0577.jpg");
+    background-size: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right top;
+}
+
+
+
+#about {
+    background: #ffffff;
+    color: #000000;
+}
+
+#about p, #about h1 {
+    text-align: right;
+    margin-right: 5%;
+}
+
+#about p {
+    color: #808080;
+}
+
+#about ul {
+    margin-top: 10%;
+    margin-left: auto;
+    color: #000000;
+}
+
+#about li {
+    color: #808080;
+}
+
+#myfoto {
+    max-height: 550px;  
+}
+
+
+
+
+
+
+#portfolio {
+    background: #1a1a1a;
+    color: #ffffff;
+    padding-top: 5%;
+}
+
+#portfolio p, #portfolio h1 {
+    text-align: left;
+    margin-left: 5%;
+}
+
+#portfolio p {
+    margin-bottom: 5%;
+}
+
+
+#portfolio > div{
+    margin-bottom: 5%;
+    padding: 0,5%;
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+}
+
+#portfolio .img{
+    display: block;
+    width: 100%;
+    padding: 5%;
+/*
+    display: inline-block;
+    float: left;
+    min-width: 200px;*/
+}
+
+#portfolio img{
+    width: 100%;
+}
+
+#portfolio .imgtext{
+    display: block;
+    color: #808080;
+    padding: 5%;
+    width: auto;
+    text-align: right;
+}
+
+
+
+
+
+footer {
+    color: #000000;
+    display: block;
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    height: 70vh;
+    width: 100%;
+    z-index: -10;
+    padding-top: 20%;
+}
+
+#contactme {
+    display: block;
+    margin: auto;
+    width: 50%;
+    text-align: center;
+}
+
+footer h1{
+    font-size: 3em;
+    color: #808080;
+}
+
+footer span{
+    padding: 1%;
+}
+
+footer div{
+    margin-top: 15%;
+}
+
+
+
+.thumbnail{
+    border-color: #ffffff;
+}
+
+
+
+.picbw {
+  -webkit-transition: all 1.5s ease;
+     -moz-transition: all 1.5s ease;
+       -o-transition: all 1.5s ease;
+      -ms-transition: all 1.5s ease;
+          transition: all 1.5s ease;
+    
+      -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+              filter: grayscale(100%);
+}
+
+
+.picbw:hover {
+     -webkit-filter: grayscale(10%); /* Safari 6.0 - 9.0 */
+             filter: grayscale(10%);
+}
+
+
+
+
+
+
+@media only screen and (min-width: 480px){
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+
+          [class*="col-"]{
+          float: left;
+          padding: 1%;
+        }
+
+    nav a{
+      display: inline-block;
+      text-decoration: none;
+      text-align: center;
+      line-height: 150%;
+      width: 22%;
+      background: #ffffff;
+      color: #000000;
+      font-size:  1em;
+    }
+    
+    
+    
+    #portfolio .img{
+        display: inline-block;
+        float: left;
+        width: 33%;
+        min-width: 140px;
+        padding: 1%;
+    }
+
+    #portfolio .imgtext{
+        display: inline-block;
+        float: left;
+        width: 66%;
+        height: 100%;
+        text-align: left;
+        padding: 2%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+    
+    footer h1{
+        font-size: 4em;
+    }
+    
+    footer {
+        padding-top: 10%;
+    }
+    
+    footer div{
+        margin-top: 14%;
+    }
+    
+    
+}
+
+
+
+
+
+.black {
+    background: #1a1a1a;
+}
+
+.red {
+    color: #ff6666 !important;
+}
