@@ -29,22 +29,22 @@ $(document).ready(function(){
         headerHeight = $("header").height();
         w = $(window);
             if ($(document).scrollTop() <= -headerHeight + $("#home").outerHeight() + 1) {
-            $("a[href*='#']").removeClass("hovered");
-            $("a[href='#home']").addClass("hovered"); 
+            $("a[href*='#']").removeClass("scrolled");
+            $("a[href='#home']").addClass("scrolled"); 
         }
         else if (($(document).scrollTop() > -headerHeight + $("#home").outerHeight() + 1) && 
                  ($(document).scrollTop() <= -headerHeight + $("#home").outerHeight() + $("#about").outerHeight() + 1))  {
-            $("a[href*='#']").removeClass("hovered");
-            $("a[href='#about']").addClass("hovered"); 
+            $("a[href*='#']").removeClass("scrolled");
+            $("a[href='#about']").addClass("scrolled"); 
         }
         else if (($(document).scrollTop() > -headerHeight + $("#home").outerHeight() + $("#about").outerHeight() + 1) &&
                  ($(document).scrollTop() < headerHeight + $("main").outerHeight() - $(window).height()*0.6))  {
-            $("a[href*='#']").removeClass("hovered");
-            $("a[href='#portfolio']").addClass("hovered"); 
+            $("a[href*='#']").removeClass("scrolled");
+            $("a[href='#portfolio']").addClass("scrolled"); 
         }
         else if ($(document).scrollTop() > headerHeight + $("main").height() - $(window).height()*0.6)  {
-            $("a[href*='#']").removeClass("hovered");
-            $("a[href='#information']").addClass("hovered"); 
+            $("a[href*='#']").removeClass("scrolled");
+            $("a[href='#information']").addClass("scrolled"); 
         }
     })
     
