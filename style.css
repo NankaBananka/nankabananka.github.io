@@ -3,6 +3,7 @@
          -moz-box-sizing: border-box;
           -ms-box-sizing: border-box;
               box-sizing: border-box;
+    margin: 0%;
 }
 
 .row::after {
@@ -34,6 +35,7 @@ section {
     position: static;
     z-index: 50;
     width:  100%;
+    height: auto;
     min-height: 100vh;
     padding: 5% 5% 1% 5%;
 }
@@ -59,6 +61,10 @@ nav a{
   background: #ffffff;
   color: #000000;
   font-size:  0.9em;
+}
+
+nav a:hover, nav a:focus {
+    text-decoration: none;
 }
 
 nav{
@@ -268,15 +274,18 @@ footer div{
     
     
     #portfolio .img{
-        display: inline-block;
+/*        display: inline-block;*/
+        display: block;
         float: left;
         width: 33%;
         min-width: 140px;
         padding: 1%;
+        margin: 1% 0% 1% 0%;
     }
 
     #portfolio .imgtext{
-        display: inline-block;
+/*        display: inline-block;*/
+        display: block;
         float: left;
         width: 66%;
         height: 100%;
@@ -309,6 +318,6 @@ footer div{
     background: #1a1a1a;
 }
 
-.red {
-    color: #ff6666 !important;
+.hovered {
+    text-decoration: underline !important;
 }
