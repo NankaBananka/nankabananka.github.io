@@ -317,5 +317,9 @@ footer div{
 }
 
 .hovered {
+    opacity: 0.5 !important;
+}
+
+.hovered {
     text-decoration: underline !important;
 }
