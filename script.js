@@ -28,7 +28,7 @@ $(document).ready(function(){
     $(window).scroll(function() {
         headerHeight = $("header").height();
         w = $(window);
-            if ($(document).scrollTop() <= -headerHeight + $("#home").outerHeight() + 1) {
+        if ($(document).scrollTop() <= -headerHeight + $("#home").outerHeight() + 1) {
             $("a[href*='#']").removeClass("scrolled");
             $("a[href='#home']").addClass("scrolled"); 
         }
@@ -38,11 +38,11 @@ $(document).ready(function(){
             $("a[href='#about']").addClass("scrolled"); 
         }
         else if (($(document).scrollTop() > -headerHeight + $("#home").outerHeight() + $("#about").outerHeight() + 1) &&
-                 ($(document).scrollTop() < headerHeight + $("main").outerHeight() - $(window).height()*0.6))  {
+                 ($(document).scrollTop() < headerHeight + $("main").outerHeight() - w.height()*0.6))  {
             $("a[href*='#']").removeClass("scrolled");
             $("a[href='#portfolio']").addClass("scrolled"); 
         }
-        else if ($(document).scrollTop() > headerHeight + $("main").height() - $(window).height()*0.6)  {
+        else if ($(document).scrollTop() > headerHeight + $("main").height() - w.height()*0.6)  {
             $("a[href*='#']").removeClass("scrolled");
             $("a[href='#information']").addClass("scrolled"); 
         }
@@ -85,6 +85,7 @@ $(document).ready(function(){
                 return false;
             }
         }
+
     });
     
     
