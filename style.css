@@ -265,10 +265,10 @@ footer div{
       text-decoration: none;
       text-align: center;
       line-height: 150%;
-      width: 22%;
+      width: 23%;
       background: #ffffff;
       color: #000000;
-      font-size:  1em;
+      font-size:  0.9em;
     }
     
     
@@ -303,6 +303,7 @@ footer div{
     
     footer div{
         margin-top: 14%;
+        margin-bottom: -10%;
     }
     
     
@@ -317,9 +318,11 @@ footer div{
 }
 
 .hovered {
-    opacity: 0.5 !important;
+    opacity: 0.3 !important;
+    filter: alpha(opacity=30);
+    color: inherit;
 }
 
-.hovered {
+.scrolled {
     text-decoration: underline !important;
 }
