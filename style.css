@@ -207,13 +207,6 @@ footer span{
     padding: 1%;
 }
 
-footer:first-child{
-    margin-top: 15%;
-}
-
-footer:last-child {
-    padding-bottom: 5%;
-}
 
 
 
@@ -307,7 +300,7 @@ footer:last-child {
     
     footer div{
         margin-top: 14%;
-        margin-bottom: -10%;
+        margin-bottom: 5%;
     }
     
     
