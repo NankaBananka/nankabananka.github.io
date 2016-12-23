@@ -294,11 +294,8 @@ footer span{
         font-size: 4em;
     }
     
-/*     footer {
-        padding-top: 10%;
-    } */
     
-    footer>div{
+    footer > div{
         margin-top: 14%;
         margin-bottom: 5%;
     }
