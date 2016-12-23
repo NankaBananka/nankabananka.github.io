@@ -298,7 +298,7 @@ footer span{
         padding-top: 10%;
     } */
     
-    footer div{
+    footer>div{
         margin-top: 14%;
         margin-bottom: 5%;
     }
