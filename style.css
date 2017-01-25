@@ -25,10 +25,11 @@ main {
     overflow-y: auto;
     margin-top:  0%;
     display: block;
-    margin-left: -2%;
-    margin-right: -2%;
     background: #1a1a1a;
-    position: relative
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    left: 0px;
 }
 
 section {
