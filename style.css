@@ -30,10 +30,10 @@ main {
     margin-right: -2%;
 */
     background: #1a1a1a;
-    position: absolute;
-    top: 0px;
+    position: relative;
+/*     top: 0px;
     left: 0px;
-    right: 0px;
+    right: 0px; */
 }
 
 section {
